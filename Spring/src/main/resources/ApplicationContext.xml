@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+		https://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context
+		https://www.springframework.org/schema/context/spring-context.xsd">
+
+	<context:component-scan
+		base-package="com.techxyte1" />
+
+
+
+
+
+
+
+
+
+	<!-- <bean id="gc" class="com.techxyte1.GoldCustomer"> <constructor-arg 
+		name="id" value="101"/> <constructor-arg name="name" value="alex"/> <constructor-arg 
+		ref="address"/> </bean> -->
+	<!-- <bean id="address" class="com.techxyte1.Address"> <constructor-arg 
+		value="Banglore"></constructor-arg> <constructor-arg value="Karnataka"></constructor-arg> 
+		</bean> -->
+
+	<!--<bean id="gc" class="com.techxyte1.GoldCustomer" scope="prototype" init-method="start" 
+		destroy-method="stop"> <property name="id" value="101" /> <property name="name" 
+		value="alex" /> <property name="address" ref="address" /> </bean> -->
+
+	<!--<bean id="address" class="com.techxyte1.Address"> <property name="City" 
+		value="Banglore" /> <property name="State" value="Karnataka" /> </bean> -->
+
+</beans>
